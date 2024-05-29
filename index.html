@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Images/instagram-removebg-preview.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="Aside">
+        <div class="Logo">
+            <i class="fa-brands fa-instagram"></i>
+            <img src="Images/Instagram_Black-removebg-preview.png" alt="">
+        </div>
+        <div class="Cards">
+            <div class="card special" id="SpecialDark">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </div>
+            <div class="card">
+                <i class="material-icons">search</i>
+                <span>Search</span>
+            </div>
+            <div class="card">
+                <i class="material-icons">explore</i>
+                <span>Explore</span>
+            </div>
+            <div class="cardImage">
+                <img src="Images/video-removebg-preview.png" alt="">
+                <span>Reels</span>
+            </div>
+            <div class="card">
+                <i class="material-icons">chat</i>
+                <span>Message</span>
+            </div>
+            <div class="card">
+                <i class="material-icons">favorite</i>
+                <span>Notifications</span>
+            </div>
+            <div class="card">
+                <i class="material-icons">add_circle</i>
+                <span>Create</span>
+            </div>
+            <div class="profile">
+                <img src="Images/Home.jpg" alt="">
+                <span>Profile</span>
+            </div>
+        </div>
+        <div class="bottomaside">
+            <div class="cardBottom">
+                <svg aria-label="" class="x1lliihq x1n2onr6" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="24" role="img"
+                viewBox="0 0 192 192" width="24">
+                <title></title>
+                <path class="x19hqcy"
+                d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z">
+            </path>
+                </svg>
+                <span>Threads</span>
+            </div>
+            <div class="cardBottom CardBott2" id="MoreBut">
+                <i class="material-icons">menu</i>
+                <span>More</span>
+            </div>
+        </div>
+        <div class="MoreList NoneDisplay" id="MoreListNow">
+            <div class="CardsTop">
+                <div class="Card">
+                    <i class="material-icons">settings</i>
+                    <span>Settings</span>
+                </div>
+                <div class="Card">
+                    <i class="material-icons">schedule</i>
+                    <span>Your activity</span>
+                </div>
+                <div class="Card">
+                    <i class="material-icons">bookmark</i>
+                    <span>Saved</span>
+                </div>
+                <div class="Card">
+                    <i class="material-icons">sunny</i>
+                    <span>Switch apperaance</span>
+                </div>
+                <div class="Card">
+                    <i class="material-icons">error</i>
+                    <span>Report a problem</span>
+                </div>
+            </div>
+            <hr class="hr11">
+            <div class="Card Card2">
+                <span>Switch accounts</span>
+            </div>
+            <hr class="hr12">
+            <div class="Card">
+                <span>Log Out</span>
+            </div>  
+        </div>
+    </div>
+    <main>
+        <div class="FullState">
+            <div class="MidSide">
+                <div class="Header">
+                    <div class="story">
+                        <img src="Images/Messi.jpg" alt="">
+                        <div class="span">
+                            <span>leomessi</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="Images/Yassmin.jpg" alt="">
+                        <div class="span">
+                            <span>yasmine-sabri</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="Images/ronaldo2.jpg" alt="">
+                        <div class="span">
+                            <span>cristiano</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="Images/Salah.jpg" alt="">
+                        <div class="span">
+                            <span>mosalah</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="Images/Ramadan.jpg" alt="">
+                        <div class="span">
+                            <span>mohamedramadanws</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="Images/Amir.jpg" alt="">
+                        <div class="span">
+                            <span>karara.amir</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="Images/Emam.jpg" alt="">
+                        <div class="span">
+                            <span>mohamedemam</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="Images/Helmy.jpg" alt="">
+                        <div class="span">
+                            <span>ahmedhelmy</span>
+                        </div>
+                    </div>
+                    <i class="material-icons arrow">navigate_next</i>
+                </div>
+                <div class="MidPostsSECTON">
+                    <div class="posts">
+                        <div class="post">
+                            <div class="topPost">
+                                <div class="SpanHomeimg">
+                                    <img src="Images/Yassmin.jpg" alt="">
+                                    <span>yasmine-sabri<span class="spanintospan"><sup>.</sup>2d</span></span>
+                                </div>
+                                <div class="moreicon">
+                                    <i class="material-icons">more_horiz</i>
+                                </div>
+                            </div>
+                            <div class="ContImage">
+                                <img src="Images/Yassmin2.jpg" alt="">
+                            </div>
+                            <div class="AdditionOptions">
+                                <div class="lefticons">
+                                    <i class="material-icons">favorite</i>
+                                    <i class="material-icons">maps_ugc</i>
+                                    <i class="material-icons">send</i>
+                                </div>
+                                <div class="righticon">
+                                    <i class="material-icons">bookmark</i>
+                                </div>
+                            </div>
+                            <div class="textoptions">
+                                <h2>270,155 likes</h2>
+                                <div class="rowsoanp">
+                                    <span>yasmine-sabri</span>
+                                    <span>يا صباح البركة 💕</span>
+                                </div>
+                                <h5>see translation</h5>
+                                <span class="commentsView">View all 2,703 comments</span>
+                                <div class="inputSide">
+                                    <div class="input">
+                                        <input type="text" placeholder="Add a comment…">
+                                    </div>
+                                    <div>
+                                        <i class="material-icons">sentiment_satisfied</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="topPost">
+                                <div class="SpanHomeimg">
+                                    <img src="Images/Zamalek.jpg" alt="">
+                                    <span>zscofficial<span class="spanintospan"><sup>.</sup>2d</span></span>
+                                </div>
+                                <div class="moreicon">
+                                    <i class="material-icons">more_horiz</i>
+                                </div>
+                            </div>
+                            <div class="ContImage">
+                                <img src="Images/386925672_627508822628028_3783560756074043503_n.jpg" alt="">
+                            </div>
+                            <div class="AdditionOptions">
+                                <div class="lefticons">
+                                    <i class="material-icons">favorite</i>
+                                    <i class="material-icons">maps_ugc</i>
+                                    <i class="material-icons">send</i>
+                                </div>
+                                <div class="righticon">
+                                    <i class="material-icons">bookmark</i>
+                                </div>
+                            </div>
+                            <div class="textoptions">
+                                <h2>39,688 likes</h2>
+                                <div class="rowsoanp">
+                                    <span>zscofficial</span>
+                                    <span>شيكـــا إنتهي .... ؟ ...</span>
+                                </div>
+                                <h5>see translation</h5>
+                                <span class="commentsView">View all 513 comments</span>
+                                <div class="inputSide">
+                                    <div class="input">
+                                        <input type="text" placeholder="Add a comment…">
+                                    </div>
+                                    <div>
+                                        <i class="material-icons">sentiment_satisfied</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lastside">
+                <div class="Cards">
+                    <div class="mainCard">
+                        <div class="leftCard">
+                            <div>
+                                <img src="Images/Home.jpg" alt="">
+                            </div>
+                            <div class="handlename">
+                                <span>ahmedbeko2004</span>
+                                <h4>Ahmed Abobakr</h4>
+                            </div>
+                        </div>
+                        <div class="rightCard">
+                            <span>Switch</span>
+                        </div>
+                    </div>
+                    <div class="textsuggext">
+                        <div>
+                            <span>Suggested for you</span>
+                        </div>
+                        <div>
+                            <h5>See All</h5>
+                        </div>
+                    </div>
+                    <div class="CardFriend">
+                        <div class="leftCard">
+                            <div>
+                                <img src="Images/Mazen.jpg" alt="">
+                            </div>
+                            <div class="handlename">
+                                <span>a7med.mazen.9</span>
+                                <h4>Suggested for you</h4>
+                            </div>
+                        </div>
+                        <div class="rightCard">
+                            <span>Follow</span>
+                        </div>
+                    </div>
+                    <div class="CardFriend">
+                        <div class="leftCard">
+                            <div>
+                                <img src="Images/Salah.jpg" alt="">
+                            </div>
+                            <div class="handlename">
+                                <span>mosalah</span>
+                                <h4>Followed by amr.sherif.adel</h4>
+                            </div>
+                        </div>
+                        <div class="rightCard">
+                            <span>Follow</span>
+                        </div>
+                    </div>
+                    <div class="CardFriend">
+                        <div class="leftCard">
+                            <div>
+                                <img src="Images/Yasmen.jpg" alt="">
+                            </div>
+                            <div class="handlename">
+                                <span>yasminabdelaziz_</span>
+                                <h4>Followed by ahmedhelmy, mellaremad</h4>
+                            </div>
+                        </div>
+                        <div class="rightCard">
+                            <span>Follow</span>
+                        </div>
+                    </div>
+                    <div class="CardFriend">
+                        <div class="leftCard">
+                            <div>
+                                <img src="Images/Sara.jpg" alt="">
+                            </div>
+                            <div class="handlename">
+                                <span>sarahahmedsalama</span>
+                                <h4>Populer</h4>
+                            </div>
+                        </div>
+                        <div class="rightCard">
+                            <span>Follow</span>
+                        </div>
+                    </div>
+                    <div class="CardFriend">
+                        <div class="leftCard">
+                            <div>
+                                <img src="Images/Shreef.jpg" alt="">
+                            </div>
+                            <div class="handlename">
+                                <span>sherifmoneerofficial</span>
+                                <h4>Populer</h4>
+                            </div>
+                        </div>
+                        <div class="rightCard">
+                            <span>Follow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

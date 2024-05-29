@@ -1,0 +1,673 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg-color);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+
+:root {
+  --bg-color: #fff;
+  --color-text: #000;
+  --main-color: #ccc;
+  --header-bg: #f9f9f9;
+  --Hashtag-color: rgba(0, 0, 0, 0.05);
+  --SpanVideo: rgba(0, 0, 0, 0.05);
+  --serach-bg: #fff;
+  --spanVideoColor: #272727;
+  --Hashtag-bg: #f9f9f9;
+  --red-color: #ff3150;
+  --section-color: #eff7fa;
+  --green-color: #33d1cc;
+  --yello-color: #ffc400;
+  --dark-color: #19283f;
+  --black-color: #000016;
+  --none-color: #DDD0C8;
+  --color-Next: #000;
+  --bg-left: rgb(239, 243, 244);
+  --large-size: 20px;
+  --medueim-size: 15px;
+  --small-size: 10px;
+  --V-small-size: 5px;
+  --Bold-size: 700;
+  --med-size: 500;
+  --Small-size: 300;
+  --blueWeb-color: rgb(29, 155, 240);
+  --yellWeb-color: rgb(255, 212, 0);
+  --redWeb-color: rgb(249, 24, 128);
+  --MovWeb-color: rgb(120, 86, 255);
+  --OrangeWeb-color: rgb(255, 122, 0);
+  --greenWeb-color: rgb(0, 186, 124);
+  --shadowBox: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+.Dark-mode {
+  --spanVideoColor: #ccc;
+  --bg-left: rgb(22, 24, 28);
+  --bg-color: #0b0b0b;
+  --color-text: #fff;
+  --header-bg: #0b0b0b;
+  --main-color: #2c2c2c;
+  --Hashtag-color: rgba(255, 255, 255, 0.05);
+  --SpanVideo: rgba(255, 255, 255, 0.1);
+  --serach-bg: #000;
+  --Hashtag-bg: #0b0b0b;
+  --color-Next: #fff;
+}
+
+.Aside {
+  display: flex;
+  flex-direction: column;
+  width: 17%;
+  height: 100%;
+  padding: 30px 20px;
+  border-right: 1px solid rgba(214, 235, 241, 0.581);
+  position: fixed;
+  left: 0;
+}
+.Aside .Logo {
+  display: flex;
+  flex-direction: column;
+}
+.Aside .Logo i {
+  display: none;
+  font-size: 2rem;
+  position: relative;
+  left: 2px;
+}
+.Aside .Logo img {
+  width: 100px;
+}
+.Aside .Cards {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.Aside .Cards .card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 15px 0;
+}
+.Aside .Cards .card span {
+  padding-left: 10px;
+  color: var(--color-Next);
+  font-size: 1.1rem;
+  position: relative;
+  top: 2px;
+}
+.Aside .Cards .card i {
+  color: var(--color-text);
+  font-size: 2rem;
+}
+.Aside .Cards .card:hover {
+  background-color: #ccc;
+}
+.Aside .Cards .cardImage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 15px 0px 10px 3px;
+}
+.Aside .Cards .cardImage span {
+  position: relative;
+  left: 14px;
+  font-size: 1.1rem;
+}
+.Aside .Cards .cardImage img {
+  width: 25px;
+  height: 25px;
+}
+.Aside .Cards .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 3px;
+}
+.Aside .Cards .profile img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.Aside .Cards .profile span {
+  color: var(--color-Next);
+  padding-left: 12px;
+}
+.Aside .bottomaside {
+  padding-top: 0px;
+  position: relative;
+  top: 250px;
+}
+.Aside .bottomaside .cardBottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.Aside .bottomaside .cardBottom span {
+  padding-left: 13px;
+}
+.Aside .bottomaside .CardBott2 {
+  cursor: pointer;
+}
+
+main {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 40px;
+}
+main .FullState {
+  display: flex;
+  width: 100%;
+}
+main .FullState .MidSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35%;
+}
+main .FullState .MidSide .Header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+main .FullState .MidSide .Header .story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main .FullState .MidSide .Header .story img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 1px solid var(--red-color);
+}
+main .FullState .MidSide .Header .story .span {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+main .FullState .MidSide .Header .story .span span {
+  font-size: 0.7rem;
+}
+main .FullState .MidSide .Header .arrow {
+  position: relative;
+  bottom: 8px;
+  right: 55px;
+  background-color: var(--bg-color);
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+main .FullState .MidSide .MidPostsSECTON {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .FullState .MidSide .MidPostsSECTON .posts {
+  display: flex;
+  flex-direction: column;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post {
+  width: 500px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 30px 30px;
+  padding: 0px 0 10px 0;
+  border-bottom: 1px solid rgba(214, 235, 241, 0.581);
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .topPost {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .topPost .SpanHomeimg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .topPost .SpanHomeimg img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid var(--red-color);
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .topPost .SpanHomeimg span {
+  position: relative;
+  left: 5px;
+  top: 0px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .topPost .SpanHomeimg span .spanintospan {
+  position: relative;
+  top: 0px;
+  color: rgb(115, 115, 115);
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .topPost .moreicon i {
+  position: relative;
+  top: 3px;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .ContImage {
+  margin: 15px 0;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .ContImage img {
+  border-radius: 5px;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .AdditionOptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .AdditionOptions .lefticons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .AdditionOptions .lefticons i {
+  font-size: 1.6rem;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .AdditionOptions .righticon i {
+  font-size: 1.6rem;
+  position: relative;
+  top: 5px;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .textoptions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .textoptions h2 {
+  font-size: 0.9rem;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .textoptions h5 {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .textoptions .rowsoanp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .textoptions .commentsView {
+  color: rgb(115, 115, 115);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .textoptions .inputSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .textoptions .inputSide .input input {
+  outline: none;
+}
+main .FullState .MidSide .MidPostsSECTON .posts .post .textoptions .inputSide i {
+  font-size: 1rem;
+}
+main .FullState .lastside {
+  display: flex;
+  flex-direction: column;
+}
+main .FullState .lastside .Cards {
+  width: 300px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+main .FullState .lastside .Cards .mainCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main .FullState .lastside .Cards .mainCard .leftCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .FullState .lastside .Cards .mainCard .leftCard img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+main .FullState .lastside .Cards .mainCard .leftCard .handlename {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+main .FullState .lastside .Cards .mainCard .leftCard .handlename span {
+  position: relative;
+  top: 1px;
+}
+main .FullState .lastside .Cards .mainCard .leftCard .handlename h4 {
+  position: relative;
+  bottom: 1px;
+  font-size: 0.9rem;
+  color: var(--main-color);
+}
+main .FullState .lastside .Cards .mainCard .rightCard span {
+  color: var(--blueWeb-color);
+  font-size: 0.8rem;
+}
+main .FullState .lastside .Cards .textsuggext {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 15px;
+}
+main .FullState .lastside .Cards .textsuggext span {
+  color: #000;
+  font-size: 0.9rem;
+}
+main .FullState .lastside .Cards .textsuggext h5 {
+  color: #000;
+  font-size: 0.8rem;
+}
+main .FullState .lastside .Cards .CardFriend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+main .FullState .lastside .Cards .CardFriend .leftCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .FullState .lastside .Cards .CardFriend .leftCard img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+main .FullState .lastside .Cards .CardFriend .leftCard .handlename {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  position: relative;
+  top: 2px;
+}
+main .FullState .lastside .Cards .CardFriend .leftCard .handlename span {
+  position: relative;
+  top: 1px;
+  font-size: 0.9rem;
+}
+main .FullState .lastside .Cards .CardFriend .leftCard .handlename h4 {
+  position: relative;
+  bottom: 1px;
+  font-size: 0.8rem;
+  color: rgb(115, 115, 115);
+}
+main .FullState .lastside .Cards .CardFriend .rightCard span {
+  color: var(--blueWeb-color);
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 2px;
+}
+
+@media (min-width: 1160px) and (max-width: 1260px) {
+  .Aside {
+    width: 10%;
+  }
+  .Aside .Logo i {
+    display: flex;
+  }
+  .Aside .Logo img {
+    display: none;
+  }
+  .Aside .Cards .card span {
+    display: none;
+  }
+  .Aside .Cards .cardImage span {
+    display: none;
+  }
+  .Aside .Cards .profile span {
+    display: none;
+  }
+  .Aside .bottomaside {
+    padding-top: 250px;
+  }
+  .Aside .bottomaside .cardBottom span {
+    display: none;
+  }
+  main .FullState .MidSide {
+    margin-left: 12%;
+  }
+  main .FullState .lastside .Cards {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .Aside {
+    width: 10%;
+  }
+  .Aside .Logo i {
+    display: flex;
+  }
+  .Aside .Logo img {
+    display: none;
+  }
+  .Aside .Cards .card span {
+    display: none;
+  }
+  .Aside .Cards .cardImage span {
+    display: none;
+  }
+  .Aside .Cards .profile span {
+    display: none;
+  }
+  .Aside .bottomaside {
+    padding-top: 250px;
+  }
+  .Aside .bottomaside .cardBottom span {
+    display: none;
+  }
+  main .FullState .MidSide {
+    margin-left: 12%;
+  }
+  main .FullState .lastside {
+    display: none;
+  }
+}
+@media (min-width: 991px) and (max-width: 1160px) {
+  .Aside {
+    width: 10%;
+  }
+  .Aside .Logo i {
+    display: flex;
+  }
+  .Aside .Logo img {
+    display: none;
+  }
+  .Aside .Cards .card span {
+    display: none;
+  }
+  .Aside .Cards .cardImage span {
+    display: none;
+  }
+  .Aside .Cards .profile span {
+    display: none;
+  }
+  .Aside .bottomaside {
+    padding-top: 250px;
+  }
+  .Aside .bottomaside .cardBottom span {
+    display: none;
+  }
+  main .FullState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .FullState .MidSide {
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .FullState .lastside {
+    display: none;
+  }
+}
+@media (min-width: 1260px) and (max-width: 1560px) {
+  main .FullState .MidSide {
+    margin-left: 19%;
+  }
+}
+@media (max-width: 767px) {
+  .Aside {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    padding: 40px 10px;
+    width: 100%;
+    height: 35px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .Aside .Logo i {
+    display: flex;
+    left: 0;
+  }
+  .Aside .Logo img {
+    display: none;
+  }
+  .Aside .Cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 40px;
+  }
+  .Aside .Cards .card {
+    width: 100%;
+    margin: 0px;
+  }
+  .Aside .Cards .card span {
+    display: none;
+  }
+  .Aside .Cards .cardImage {
+    margin: 11px 0px 10px 3px;
+    display: none;
+  }
+  .Aside .Cards .cardImage span {
+    display: none;
+  }
+  .Aside .Cards .cardImage img {
+    width: 350px;
+    height: 26px;
+  }
+  .Aside .Cards .profile {
+    display: none;
+  }
+  .Aside .bottomaside {
+    display: none;
+  }
+  main .FullState {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .FullState .lastside {
+    display: none;
+  }
+  main .FullState .MidSide {
+    margin-left: 12%;
+  }
+  main .FullState .MidSide .Header {
+    gap: 2px;
+  }
+  main .FullState .MidSide .Header .story {
+    width: 72px;
+  }
+}
+.MoreList {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 999;
+  position: relative;
+  bottom: 209px;
+}
+.MoreList .Card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px 20px;
+}
+.MoreList .Card i {
+  color: var(--color-text);
+  font-size: 1.1rem;
+}
+.MoreList .Card span {
+  color: var(--color-Next);
+  position: relative;
+  left: 5px;
+}
+.MoreList .hr11 {
+  width: 100%;
+  border-color: rgb(219, 219, 219);
+  border-width: 3px;
+}
+.MoreList .hr12 {
+  width: 100%;
+  border-color: #ccc;
+  border-width: 1px;
+}
+
+.NoneDisplay {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
